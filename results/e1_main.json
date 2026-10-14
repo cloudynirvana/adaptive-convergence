@@ -1,0 +1,167 @@
+{
+  "n_worlds": 400,
+  "summary": {
+    "Greedy (myopic)": {
+      "auc_mean": 342.1293918113268,
+      "auc_ci": [
+        325.6697661317442,
+        358.6691615095594
+      ],
+      "techs_completed": 25.85,
+      "budget_share_dead_ends": 0.36969417414290434,
+      "budget_share_unfinished": 0.175433446228512,
+      "milestone_reached_rate": {
+        "lunar_industry": 0.5625,
+        "mars_settlement": 0.295,
+        "interstellar_probe": 0.245
+      }
+    },
+    "Greedy + option value": {
+      "auc_mean": 442.16729791553007,
+      "auc_ci": [
+        427.7970795016043,
+        456.2727077290279
+      ],
+      "techs_completed": 30.34,
+      "budget_share_dead_ends": 0.2122696236210786,
+      "budget_share_unfinished": 0.1421355886918361,
+      "milestone_reached_rate": {
+        "lunar_industry": 0.8475,
+        "mars_settlement": 0.5625,
+        "interstellar_probe": 0.405
+      }
+    },
+    "Uniform (divergent)": {
+      "auc_mean": 208.91338927023347,
+      "auc_ci": [
+        203.4171026578273,
+        214.49608200659284
+      ],
+      "techs_completed": 25.6125,
+      "budget_share_dead_ends": 0.3091141568784758,
+      "budget_share_unfinished": 0.44249213978283414,
+      "milestone_reached_rate": {
+        "lunar_industry": 0.2375,
+        "mars_settlement": 0.0025,
+        "interstellar_probe": 0.0
+      }
+    },
+    "Fixed split (90/10)": {
+      "auc_mean": 426.06145760598486,
+      "auc_ci": [
+        413.66887184205376,
+        438.6595172224756
+      ],
+      "techs_completed": 30.715,
+      "budget_share_dead_ends": 0.17694604054689264,
+      "budget_share_unfinished": 0.18169451494929725,
+      "milestone_reached_rate": {
+        "lunar_industry": 0.855,
+        "mars_settlement": 0.5975,
+        "interstellar_probe": 0.3725
+      }
+    },
+    "Thompson sampling": {
+      "auc_mean": 395.7792205058057,
+      "auc_ci": [
+        383.84634531046805,
+        407.881742327369
+      ],
+      "techs_completed": 30.805,
+      "budget_share_dead_ends": 0.1846777136116426,
+      "budget_share_unfinished": 0.1995876937610117,
+      "milestone_reached_rate": {
+        "lunar_industry": 0.8675,
+        "mars_settlement": 0.5175,
+        "interstellar_probe": 0.2675
+      }
+    },
+    "Adaptive convergence": {
+      "auc_mean": 496.77269325835294,
+      "auc_ci": [
+        484.4623746481689,
+        509.43606969355807
+      ],
+      "techs_completed": 32.8075,
+      "budget_share_dead_ends": 0.08913785397696725,
+      "budget_share_unfinished": 0.12405524002111039,
+      "milestone_reached_rate": {
+        "lunar_industry": 0.9275,
+        "mars_settlement": 0.7275,
+        "interstellar_probe": 0.555
+      }
+    },
+    "Oracle (perfect information)": {
+      "auc_mean": 635.9938467950452,
+      "auc_ci": [
+        623.1128390385853,
+        648.8460139973245
+      ],
+      "techs_completed": 35.9225,
+      "budget_share_dead_ends": 0.02880248930848474,
+      "budget_share_unfinished": 0.04174353191153725,
+      "milestone_reached_rate": {
+        "lunar_industry": 0.9925,
+        "mars_settlement": 0.9525,
+        "interstellar_probe": 0.8075
+      }
+    }
+  },
+  "vs_reference": {
+    "Greedy (myopic)": {
+      "ratio": 0.7231144047977157,
+      "ratio_ci": [
+        0.689033697403486,
+        0.7575315216859174
+      ],
+      "win_rate": 0.28,
+      "p_value": 1.1668350424029739e-29,
+      "n": 400,
+      "p_holm": 3.5005051272089216e-29
+    },
+    "Uniform (divergent)": {
+      "ratio": 0.48599860242452947,
+      "ratio_ci": [
+        0.47067234232757243,
+        0.5018246151859298
+      ],
+      "win_rate": 0.02,
+      "p_value": 7.319192828868952e-66,
+      "n": 400,
+      "p_holm": 3.659596414434476e-65
+    },
+    "Fixed split (90/10)": {
+      "ratio": 0.97412171804424,
+      "ratio_ci": [
+        0.956406362269099,
+        0.9929381486980855
+      ],
+      "win_rate": 0.345,
+      "p_value": 7.906453656024093e-08,
+      "n": 400,
+      "p_holm": 7.906453656024093e-08
+    },
+    "Thompson sampling": {
+      "ratio": 0.9057656516508868,
+      "ratio_ci": [
+        0.8872668146834938,
+        0.9244804803677087
+      ],
+      "win_rate": 0.2525,
+      "p_value": 2.7743528788796184e-25,
+      "n": 400,
+      "p_holm": 5.548705757759237e-25
+    },
+    "Adaptive convergence": {
+      "ratio": 1.1584693228261456,
+      "ratio_ci": [
+        1.1301824410212111,
+        1.1889164976450486
+      ],
+      "win_rate": 0.75,
+      "p_value": 1.7777972345989938e-37,
+      "n": 400,
+      "p_holm": 7.111188938395975e-37
+    }
+  }
+}

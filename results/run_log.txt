@@ -1,0 +1,7 @@
+[tune] done in 106s
+[e1] done in 35s
+[e2] done in 102s
+[e3] done in 65s
+[e4] done in 53s
+[e5] done in 38s
+[m1] done in 13s

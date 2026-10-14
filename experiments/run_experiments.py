@@ -254,7 +254,8 @@ def e3_heatmap(pool, n):
     im = ax.imshow(grid, cmap="RdBu", vmin=-lim, vmax=lim, origin="lower", aspect="auto")
     for i in range(len(dead)):
         for j in range(len(sig)):
-            ax.text(j, i, f"{grid[i, j]:+.1f}%", ha="center", va="center", fontsize=9)
+            ax.text(j, i, f"{grid[i, j]:+.1f}%", ha="center", va="center", fontsize=9,
+                    color="white" if abs(grid[i, j]) > 0.5 * lim else "black")
     ax.set_xticks(range(len(sig)), [str(s) for s in sig]); ax.set_yticks(range(len(dead)), [str(d) for d in dead])
     ax.set_xlabel("Prior uncertainty σ_est"); ax.set_ylabel("Share of dead-end technologies")
     ax.set_title("E3 - Adaptive convergence vs. greedy+option (capability gain)")
